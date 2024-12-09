@@ -1,25 +1,18 @@
 #include <iostream>
 using namespace std;
 
-int fib(int n) {
-    if (n <= 1) {
-        return n;
-    } else {
-        return fib(n - 1) + fib(n - 2);
-    }
+int fibonacci(int n) {
+    if (n <= 1) return n;
+    return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 int main() {
-    int n;
-    
-    cout << "Podaj liczbę całkowitą: ";
-    cin >> n;
+    int number;
+    cout << "Podaj liczbę: ";
+    cin >> number;
 
-    if (n >= 0) {
-        cout << "Element ciągu Fibonacciego o indeksie " << n << " to: " << fib(n) << endl;
-    } else {
-        cout << "Podano liczbę ujemną" << endl;
-    }
+    cout << "Liczba: " << number << endl;
+    cout << "Element ciągu Fibonacciego: " << fibonacci(number) << endl;
 
     return 0;
 }
