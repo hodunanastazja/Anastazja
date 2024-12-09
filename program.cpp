@@ -10,17 +10,11 @@ int main() {
     int number;
     cout << "Podaj liczbę: ";
     cin >> number;
-<<<<<<< HEAD
 
-    cout << "Liczba: " << number << endl;
-    cout << "Element ciągu Fibonacciego: " << fibonacci(number) << endl;
-=======
-    
-    if (number < 0) {
+	if (number < 0) {
         cout << "Liczba musi być nieujemna!" << endl;
         return 0;
     }
->>>>>>> sprawdzanie
 
     cout << "Liczba: " << number << endl;
     cout << "Element ciągu Fibonacciego: " << fibonacci(number) << endl;
